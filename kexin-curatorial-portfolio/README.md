@@ -1,12 +1,98 @@
-# React + Vite
+# Kexin's Curatorial Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React, Vite, and Tailwind CSS to showcase curatorial projects.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio website features an elegant design with smooth transitions and interactive elements, highlighting curatorial work through immersive project presentations.
 
-## Expanding the ESLint configuration
+### Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Modern React + Vite setup with hot module replacement (HMR)
+- Responsive design using Tailwind CSS
+- Full-screen snap-scrolling project presentations
+- Animated transitions and interactive elements
+- Clean, minimalist layout with focus on visual content
+
+## Project Structure
+
+```
+kexin-curatorial-portfolio/
+├── src/
+│   ├── components/      # Reusable UI components
+│   ├── layouts/         # Layout components (MainLayout)
+│   ├── pages/          # Page components
+│   │   ├── Home.jsx
+│   │   ├── Projects.jsx
+│   │   ├── About.jsx
+│   │   ├── Contact.jsx
+│   │   ├── A_City_in_Tune.jsx
+│   │   └── Legacies_in_Exile.jsx
+│   ├── data/           # Project data and content
+│   └── styles/         # Custom styles and Tailwind configurations
+├── public/             # Static assets and images
+└── ...config files
+```
+
+## Featured Projects
+
+1. **A City in Tune**
+   - Interactive full-screen presentation
+   - Snap-scrolling navigation
+   - Alternating image/text layouts
+   - Custom animations and transitions
+
+2. **Legacies in Exile**
+   - Detailed project showcase
+   - Visual storytelling elements
+   - Responsive image galleries
+
+## Development Setup
+
+1. **Environment Setup**
+   ```bash
+   # Install dependencies
+   yarn install
+
+   # Start development server
+   yarn dev
+   ```
+
+2. **Build for Production**
+   ```bash
+   yarn build
+   ```
+
+## Project History
+
+### Initial Setup and Configuration
+- Created React + Vite project structure
+- Configured Tailwind CSS and PostCSS
+- Set up project routing and navigation
+- Established main layout and component structure
+
+### Design Implementation
+- Developed responsive layout system
+- Created project card components
+- Implemented full-screen project presentations
+- Added smooth transitions and animations
+
+### Content Integration
+- Integrated project images and descriptions
+- Created detailed project pages
+- Implemented snap-scrolling navigation
+- Added interactive elements and transitions
+
+### Repository Setup
+- Initialized Git repository
+- Set up GitHub remote
+- Configured SSH authentication
+- Established initial project documentation
+
+## Technologies Used
+
+- React 18
+- Vite
+- Tailwind CSS
+- React Router
+- PostCSS

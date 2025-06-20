@@ -24,7 +24,7 @@ const Home = () => {
     <div className="min-h-screen bg-white">
       <section className="py-72 px-64">
         <div className="w-full text-center">
-          <h1 className="text-5xl font-bold mb-8">
+          <h1 className="text-5xl font-bold mb-8 animate-gradient-text">
             Creating Experiences That Spark Connection and Sensation
           </h1>
           <p className="text-xl text-gray-600 mb-16">

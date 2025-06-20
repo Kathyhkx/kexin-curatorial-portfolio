@@ -14,17 +14,21 @@ const LegaciesInExile = () => {
     },
     {
       title: 'Curatorial Process',
-      description: `Archival research on displaced artworks and provenance. Designing interactive timelines and speculative reconstructions in Figma. Blending historical fact with digital storytelling techniques. Engaging the public through Figma Community and online discussions.`,
-      image: '/project2.png',
+      description: `The curatorial process for this exhibition started with diving into historical research and reading through literature that helped frame the broader context of how artworks were taken or displaced during times of war. A big part of the work involved looking into the provenance of each piece, trying to trace where it came from and how it changed hands over time, even when the records were incomplete or unclear. Once the project moved into a digital format, we focused on finding ways to bring these physical objects and stories into a new space. That meant reimagining them through visuals, interactive elements, and multimedia like timelines, audio clips, and speculative recreations. Every part of the exhibition was carefully arranged to guide the viewer through these complex histories, helping them connect with the themes of loss, recovery, and memory in a more personal and immersive way.`,
+      image: '/project2-research.png',
     },
     {
       title: 'Storytelling Highlights',
-      description: `The exhibition is organized as a digital journey, guiding viewers through timelines, archival documents, and speculative visualizations. Interactive elements allow users to explore the fate of individual artworks and the broader context of cultural loss. Features include clickable timelines, layered image reconstructions, embedded archival documents, and opportunities for viewers to contribute reflections on restitution and memory.`,
-      image: '/project2.png',
+      description: `This exhibition brings together stories of art that lived through war, loss, and survival. Some pieces were lucky enough to make it home, like Michelangelo's Bruges Madonna, hidden in a salt mine and later returned to its church, or Chagall's Le Père, found decades later and finally reunited with the artist's community. Others remain caught in legal and emotional limbo. Van Gogh's Sunflowers, for example, is still at the center of a restitution debate in Tokyo, and Huts on a Canal is contested between Poland and the Netherlands. Then there are the artworks that have reappeared in auction houses, sold for millions, like Meules de blé and Femme assise, robe bleue, with their histories coming to light only through lawsuits and negotiations. Together, these stories show how artworks can carry not just beauty, but also the weight of memory, loss, and the long journey toward justice.`,
+      image: '/project2-storytelling.png',
     },
     {
       title: 'Reflection',
-      description: `This project demonstrates my ability to use digital tools for curatorial storytelling, blending research, design, and public engagement to address complex historical issues.`,
+      description: `This project made me think differently about creating and sharing exhibitions. Instead of relying on traditional gallery spaces, I used digital tools like Photoshop and Figma, software applications often used for design rather than curation. These tools allowed me to experiment with layout, layering, and interaction in ways that helped bring the stories to life.
+
+One of the most powerful things about working digitally is how many more people it can reach. Anyone with internet access can explore the exhibition, no matter where they are or what time it is. They can go at their own pace, revisit sections, and engage with the content in a way that feels personal. It also allowed me to include timelines, images, and imagined reconstructions that wouldn't fit easily into a physical space.
+
+This experience showed me that curating isn't just something that happens inside museums. It can happen on a screen, through creative use of everyday digital tools. By thinking outside the box, we can tell meaningful stories and connect with wider audiences in new and exciting ways.`,
       image: '/project2.png',
     },
   ];
@@ -64,6 +68,22 @@ const LegaciesInExile = () => {
       {highlights.map((highlight, index) => {
         const isImageLeft = index % 2 === 0;
         const bgColor = index % 2 === 0 ? 'bg-blue-50' : 'bg-white';
+        
+        // Special handling for Reflection section (last section)
+        if (highlight.title === 'Reflection') {
+          return (
+            <section
+              key={index}
+              className={`py-24 w-full ${bgColor}`}
+            >
+              <div className="max-w-4xl mx-auto px-4 text-center">
+                <h2 className="text-4xl font-bold mb-8">{highlight.title}</h2>
+                <p className="text-xl text-gray-700 leading-relaxed whitespace-pre-line">{highlight.description}</p>
+              </div>
+            </section>
+          );
+        }
+        
         return (
           <section
             key={index}

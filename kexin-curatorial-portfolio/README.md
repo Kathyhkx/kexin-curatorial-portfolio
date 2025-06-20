@@ -89,6 +89,18 @@ kexin-curatorial-portfolio/
 - Configured SSH authentication
 - Established initial project documentation
 
+### Recent Updates (Session 2)
+- **About Page Overhaul:**
+  - Implemented a full-width, two-column layout with a dynamic image height that matches the text content for a balanced aesthetic.
+  - Added a "Collaborated With" section to showcase partnerships.
+  - Included a subtle scroll-down arrow to improve navigation on full-screen layouts.
+- **Project Page Enhancements:**
+  - Updated the "Legacies in Exile" page with detailed descriptions for the curatorial process, storytelling highlights, and a personal reflection.
+  - Made project card badges clickable, linking to external sites.
+  - Standardized badge styling for a consistent look and feel.
+- **Homepage Animation:**
+  - Added a vibrant, animated gradient to the main headline to make it more eye-catching.
+
 ## Technologies Used
 
 - React 18

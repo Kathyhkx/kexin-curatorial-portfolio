@@ -8,10 +8,24 @@ const ProjectCard = ({ project }) => {
       href="https://www.mississauga.ca/arts-and-culture/events/a-city-in-tune/?eventdate=2025-04-24T12:00:00&schedule=21082"
       target="_blank"
       rel="noopener noreferrer"
-      className="absolute top-3 left-3 bg-blue-600 text-white text-xs font-medium rounded-full px-3 py-1 shadow-md transition-colors duration-200 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 z-10 cursor-pointer"
+      className="absolute top-4 left-4 bg-black text-white text-xs font-medium rounded-full px-3 py-1 shadow-md transition-colors duration-200 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 z-10 cursor-pointer"
       style={{ textDecoration: 'none' }}
     >
       Now Showing · View Schedule
+    </a>
+  );
+
+  // Special badge for "Legacies in Exile"
+  const isLegaciesInExile = project.title === "Legacies in Exile";
+  const legaciesInExileBadge = (
+    <a
+      href="https://www.figma.com/proto/WeiBj42vuzIgZNY6eIWtUT/NaziLootingExhibitionPresentation?node-id=1-3&p=f&t=ZhDIpnyXoY2z7TpZ-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="absolute top-4 left-4 bg-black text-white px-3 py-1 text-xs rounded-full font-medium shadow-md transition-colors duration-200 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 z-10 cursor-pointer"
+      style={{ textDecoration: 'none' }}
+    >
+      {project.badge}
     </a>
   );
 
@@ -25,6 +39,8 @@ const ProjectCard = ({ project }) => {
         />
         {isCityInTune ? (
           cityInTuneBadge
+        ) : isLegaciesInExile ? (
+          legaciesInExileBadge
         ) : (
           project.badge && (
             <span className="absolute top-4 left-4 bg-black text-white px-3 py-1 text-xs rounded-full font-medium shadow-md">

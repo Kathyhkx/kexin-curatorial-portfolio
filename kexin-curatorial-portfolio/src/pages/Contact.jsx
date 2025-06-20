@@ -11,39 +11,39 @@ const Contact = () => {
   const socialLinks = [
     {
       name: 'Instagram',
-      subtitle: 'visuals + dailies',
-      url: '#', // Add your Instagram URL
+      subtitle: 'Connect + Share',
+      url: 'https://www.instagram.com/kexin_han_/', // Add your Instagram URL
       icon: <SiInstagram size={24} />,
     },
     {
+      name: 'TikTok',
+      subtitle: 'Visual Journal',
+      url: 'https://www.tiktok.com/@kinii.khaos', // Add your TikTok URL
+      icon: <SiTiktok size={24} />,
+    },
+    {
       name: 'Substack',
-      subtitle: 'essays + reflections',
-      url: '#', // Add your Substack URL
+      subtitle: 'Notes and Reflection',
+      url: 'https://khaosbyk.substack.com/', // Add your Substack URL
       icon: <SiSubstack size={24} />,
     },
     {
       name: 'Ko-fi',
-      subtitle: 'support my work',
-      url: '#', // Add your Ko-fi URL
+      subtitle: 'Support Me',
+      url: 'https://ko-fi.com/khaosbyk', // Add your Ko-fi URL
       icon: <SiKofi size={24} />,
     },
     {
       name: 'Medium',
-      subtitle: 'long-form stories',
-      url: '#', // Add your Medium URL
+      subtitle: 'Deep Reads',
+      url: 'https://medium.com/@kexin.han', // Add your Medium URL
       icon: <SiMedium size={24} />,
     },
     {
       name: 'LinkedIn',
-      subtitle: 'professional profile',
-      url: '#', // Add your LinkedIn URL
+      subtitle: 'Professional Profile',
+      url: 'https://www.linkedin.com/in/kexinhan/', // Add your LinkedIn URL
       icon: <SiLinkedin size={24} />,
-    },
-    {
-      name: 'TikTok',
-      subtitle: 'creative shorts',
-      url: '#', // Add your TikTok URL
-      icon: <SiTiktok size={24} />,
     },
   ];
 

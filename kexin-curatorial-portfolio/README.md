@@ -109,6 +109,12 @@ kexin-curatorial-portfolio/
   - Systematically resolved a persistent layout issue on the Contact page by analyzing and mirroring the structure of known-working pages.
   - Corrected foundational layout settings in the main layout component to ensure site-wide consistency.
 
+### Recent Updates (Session 4)
+- **Contact Page Finalization:**
+  - Updated all social media button labels with descriptive subtitles.
+  - Added the correct URLs for all social media platforms, including Instagram, TikTok, Substack, Ko-fi, Medium, and LinkedIn.
+  - Reordered the social links to prioritize key platforms.
+
 ## Technologies Used
 
 - React 18

@@ -101,10 +101,19 @@ kexin-curatorial-portfolio/
 - **Homepage Animation:**
   - Added a vibrant, animated gradient to the main headline to make it more eye-catching.
 
+### Recent Updates (Session 3)
+- **Contact Page Redesign:**
+  - Replaced the traditional contact form with a modern, link-based "social hub."
+  - Designed elegant, clickable cards for each social media platform, complete with icons and subtitles.
+- **Layout Debugging:**
+  - Systematically resolved a persistent layout issue on the Contact page by analyzing and mirroring the structure of known-working pages.
+  - Corrected foundational layout settings in the main layout component to ensure site-wide consistency.
+
 ## Technologies Used
 
 - React 18
 - Vite
 - Tailwind CSS
 - React Router
+- React Icons
 - PostCSS
